@@ -1,4 +1,4 @@
-import { Send, Instagram, Twitter, Facebook, Youtube, Globe, MapPin, Phone, Mail } from "lucide-react";
+import { Send, Instagram, Linkedin, Facebook, Youtube, Globe, MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -51,24 +51,31 @@ const Footer = () => {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3 text-hero-dark-foreground/80">
                     <MapPin size={18} className="text-primary shrink-0" />
-                    <span className="font-body text-sm">123 Travel Avenue, Adventure City</span>
+                    <span className="font-body text-sm">Srinivas Nagar,Narasaraopet, Palnadu(Dist)</span>
                   </div>
                   <div className="flex items-center gap-3 text-hero-dark-foreground/80">
                     <Phone size={18} className="text-primary shrink-0" />
-                    <span className="font-body text-sm">+1 (555) Luxe-Trip</span>
+                    <span className="font-body text-sm">+91 8247392437</span>
                   </div>
                   <div className="flex items-center gap-3 text-hero-dark-foreground/80">
                     <Mail size={18} className="text-primary shrink-0" />
-                    <span className="font-body text-sm">hello@luxetravel.com</span>
+                    <span className="font-body text-sm">ranbidgesolutionspvtltd@gmail.com</span>
                   </div>
                 </div>
 
                 {/* Social icons */}
                 <div className="flex gap-3 mt-8">
-                  {[Instagram, Twitter, Facebook, Youtube].map((Icon, i) => (
+                  {[
+                    { Icon: Instagram, href: "#" },
+                    { Icon: Linkedin, href: "https://www.linkedin.com/in/ranbidge-solutions-private-limited-company-a98983376" },
+                    { Icon: Facebook, href: "https://ranbidge-solutions-private-limited.onrender.com/" },
+                    { Icon: Youtube, href: "https://youtube.com/@rspl-academy?si=vWWZ6PIScjraDIJr" },
+                  ].map(({ Icon, href }, i) => (
                     <a
                       key={i}
-                      href="#"
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-hero-dark-foreground/60 hover:text-primary hover:scale-110 transition-all"
                     >
                       <Icon size={18} />
