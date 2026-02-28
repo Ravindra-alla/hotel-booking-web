@@ -66,7 +66,7 @@ const Footer = () => {
                 {/* Social icons */}
                 <div className="flex gap-3 mt-8">
                   {[
-                    { Icon: Instagram, href: "#" },
+                    { Icon: Instagram, href: "https://www.instagram.com/rspl_academy?igsh=MXE3NWY3ZmNiNmtucg==" },
                     { Icon: Linkedin, href: "https://www.linkedin.com/in/ranbidge-solutions-private-limited-company-a98983376" },
                     { Icon: Facebook, href: "https://ranbidge-solutions-private-limited.onrender.com/" },
                     { Icon: Youtube, href: "https://youtube.com/@rspl-academy?si=vWWZ6PIScjraDIJr" },
